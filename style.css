@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "PsychaRegular";
+  src: url("fonts/PsychaRegular-Yq334.otf") format("opentype");
+}
+
+.logo {
+  font-family: "PsychaRegular";
+  font-size: 2em;
+}
+
+body {
+  background-image: url("img/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.btn {
+  font-size: 1.1rem;
+  border-radius: 0.5rem;
+  padding: 0.8rem 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.main {
+  padding: 3rem;
+  text-align: center;
+}
+
+.card {
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-img-top {
+  border-radius: 0.5rem 0.5rem 0 0;
+  max-height: 250px;
+  object-fit: cover;
+}
+
+.card-body {
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.list-group-item {
+  background-color: #f8f9fa;
+  border: none;
+}
+
+#showAllBtn {
+  padding: 1rem 3rem;
+  font-size: 1.1rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  margin-bottom: 2rem;
+}
+
+#showAllBtn:hover {
+  background-color: #c82333;
+}
+
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+}
