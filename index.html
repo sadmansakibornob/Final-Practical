@@ -14,41 +14,42 @@
   </head>
   <body>
     <div class="header">
-      <!-- Logo Section -->
-      <div
-        class="text-center fw-bold font-monospace text-danger mt-5 fs-2 fs-sm-3 fs-lg-4"
-      >
-        <h2 class="logo">Meal Finder</h2>
-      </div>
-
-      <!-- Search Form Section -->
-      <div class="d-flex justify-content-center align-items-center mt-4">
-        <form class="d-flex flex-column align-items-center gap-4" role="search">
-          <!-- Search input field -->
-          <div class="w-100 d-flex justify-content-center">
-            <input
-              class="form-control me-2 shadow-lg border-danger p-2"
-              type="search"
-              placeholder="Search for your meal"
-              aria-label="Search for a meal"
-              id="searchBar"
-              style="width: 500px"
-            />
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div
+            class="text-center fw-bold font-monospace text-danger mt-5 fs-2 fs-sm-3 fs-lg-4"
+          >
+            <h2 class="logo">Meal Finder</h2>
           </div>
 
-          <!-- Search button -->
-          <button
-            class="btn btn-danger fw-bold shadow-lg p-2 w-sm-auto"
-            type="button"
-            onclick="searchMeal(event)"
-          >
-            Search
-          </button>
-        </form>
+          <div class="d-flex justify-content-center align-items-center mt-4">
+            <form
+              class="d-flex flex-column align-items-center gap-4 w-100"
+              role="search"
+            >
+              <div class="w-100 d-flex justify-content-center">
+                <input
+                  class="form-control me-2 shadow-lg border-danger p-2"
+                  type="search"
+                  placeholder="Search for your meal"
+                  aria-label="Search for a meal"
+                  id="searchBar"
+                />
+              </div>
+
+              <button
+                class="btn btn-danger fw-bold shadow-lg p-2 w-100 w-sm-auto"
+                type="button"
+                onclick="searchMeal(event)"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
-
-    <div class="main">
+    <div class="main mt-5">
       <div id="displayArea" class="row gy-4"></div>
       <div class="text-center">
         <button
@@ -61,7 +62,7 @@
       </div>
     </div>
 
-    <footer class="bg-danger text-white fw-bold text-center py-3">
+    <footer class="bg-danger text-white fw-bold text-center py-3 mt-5">
       <p class="mb-0">&copy; 2025 Meal Finder. All Rights Reserved.</p>
     </footer>
 
